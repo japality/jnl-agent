@@ -1,0 +1,32 @@
+# caches / build
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+*.egg-info/
+*.egg
+dist/
+build/
+
+# local env
+.venv/
+venv/
+.env
+.env.*
+.jnla/
+
+# editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# local upload helper — stays on this machine
+publish_github.sh

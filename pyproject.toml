@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jnl-agent"
+version = "0.0.1"
+description = "Score-then-perform: vibe coding as a compiled JNL program with BeanAlis policy grades"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Japality Limited" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+jnla = "jnl_agent.cli:main"
+
+[project.urls]
+Repository = "https://github.com/japality/jnl-agent"
+Related-JNL = "https://github.com/japality/japalitynil"
+Related-BeanAlis = "https://github.com/japality/beanalis-vscode"
+
+[tool.setuptools.packages.find]
+include = ["jnl_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
